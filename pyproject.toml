@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TutorialPackaging_rslakra"
+version = "0.0.1"
+authors = [
+  { name="Rohtash Lakra", email="lakra.amey@gmail.com" },
+]
+description = "A tutorial packaging project"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/rslakra/TutorialPackaging"
+Issues = "https://github.com/rslakra/TutorialPackaging/issues"
