@@ -1,19 +1,19 @@
-name: Python - LogParser WebApp CI
+name: Python - Flask WebApp CI
 
 on:
   push:
     paths:
-      - "Python/LogParserWebApp/**"
-      - ".github/workflows/python-log-parser-webapp-ci.yml"
+      - "FlaskWebApp/**"
+      - ".github/workflows/python-flaskwebapp-ci.yml"
   pull_request:
     paths:
-      - "Python/LogParserWebApp/**"
-      - ".github/workflows/python-log-parser-webapp-ci.yml"
+      - "FlaskWebApp/**"
+      - ".github/workflows/python-flaskwebapp-ci.yml"
   workflow_dispatch:
 
 defaults:
   run:
-    working-directory: Python/LogParserWebApp
+    working-directory: FlaskWebApp
 
 jobs:
   build-and-test:
@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: Python/LogParserWebApp/requirements.txt
+          cache-dependency-path: FlaskWebApp/requirements.txt
 
       - name: Install dependencies
         run: |

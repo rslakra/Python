@@ -3,17 +3,17 @@ name: Python - Generator CI
 on:
   push:
     paths:
-      - "Python/Generator/**"
+      - "Generator/**"
       - ".github/workflows/python-generator-ci.yml"
   pull_request:
     paths:
-      - "Python/Generator/**"
+      - "Generator/**"
       - ".github/workflows/python-generator-ci.yml"
   workflow_dispatch:
 
 defaults:
   run:
-    working-directory: Python/Generator
+    working-directory: Generator
 
 jobs:
   build-and-test:
@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: Python/Generator/requirements.txt
+          cache-dependency-path: Generator/requirements.txt
 
       - name: Install dependencies
         run: |
