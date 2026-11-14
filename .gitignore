@@ -279,6 +279,7 @@ secrets/
 !**/gradle/wrapper/gradle-wrapper.jar
 !**/gradlew
 !**/gradlew.bat
+!**/tests/data/
 !.env.example
 !.env.sample
 !gradle-wrapper.properties
