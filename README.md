@@ -1,4 +1,4 @@
-# PyServices
+# Python
 
 A collection of sample Python projects (web apps, tools and packaging examples) that help in learning the Python language.
 
